@@ -2,16 +2,15 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {Route, withRouter} from 'react-router-dom';
 
-// import MainNavBar from './nav-bar';
+import MainNavBar from './nav-bar';
 import LandingPage from './landing-page';
-                // <MainNavBar />
-
 
 export class App extends React.Component {
     //DON'T FORGET to put a _redirects file in the public folder
     render() {
         return (
             <div className="app">
+                <MainNavBar />
                 <Route exact path="/" component={LandingPage} />
             </div>
         );

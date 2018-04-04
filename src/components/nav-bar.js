@@ -10,11 +10,13 @@ import {Link} from 'react-router-dom';
 import './nav-bar-bootstrap.css';
 import './nav-bar-bootstrap-theme.css';
 import './nav-bar.css';
+import mainLogo from '../assets/main-logo.png';
+
 
 export default class MainNavBar extends React.Component {
   render() {
     let rightNavLinks = (
-      <Nav>
+      <Nav className="top-menu-links">
         <NavItem><Link className="navbar-app-link" to="/about">About</Link></NavItem>
         <NavItem><Link className="navbar-app-link" to="/dashboard">Dashboard</Link></NavItem>
         <NavItem><Link className="navbar-app-link" to="/stats">Stats & News</Link></NavItem>
@@ -26,7 +28,8 @@ export default class MainNavBar extends React.Component {
         <Navbar.Header>
           <Navbar.Toggle />
           <Navbar.Brand>
-            <Link className="app-name" to="/">Politismart</Link>
+            <Link className="top-logo" to="/"><img className="main-logo" src={mainLogo} alt="Site Logo" /></Link>
+            <Link className="app-name" to="/">The<br/>Hollywood Quantifier</Link>
           </Navbar.Brand>
         </Navbar.Header>
         <Navbar.Collapse>
