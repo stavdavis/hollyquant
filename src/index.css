@@ -1,6 +1,10 @@
-/*h1 {
-	font-family: Righteous;
-	font-weight: bold;
+* {
+	font-family: 'Roboto', serif;
+	font-size: 17px;
+}
+
+h1 {
+	font-family: 'Abril Fatface', cursive;
 	font-size: 30px;
 	margin-bottom: 0;
 }
@@ -49,14 +53,19 @@ h3 {
 }
 
 h4 {
-	font-size: 15px;
+	font-family: roboto;
+	font-size: 13px;
 	font-weight: normal;
 	margin-top: 0;
 }
 
 @media screen and (max-width: 480px) {
 	h4 {
-		font-size: 12px;
+		font-size: 10px;
 	}
 }
-*/
+
+p {
+	font-family: 'Gabriela', serif;
+	font-size: 100px;
+}

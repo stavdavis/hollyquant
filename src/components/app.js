@@ -4,6 +4,8 @@ import {Route, withRouter} from 'react-router-dom';
 
 import MainNavBar from './nav-bar';
 import LandingPage from './landing-page';
+import Post1 from './post1';
+import './app.css';
 
 export class App extends React.Component {
     //DON'T FORGET to put a _redirects file in the public folder
@@ -11,7 +13,9 @@ export class App extends React.Component {
         return (
             <div className="app">
                 <MainNavBar />
-                <Route exact path="/" component={LandingPage} />
+                <div className="main-post-area">
+                    <Route exact path="/" component={Post1} />
+                </div>
             </div>
         );
     }

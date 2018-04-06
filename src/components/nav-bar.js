@@ -17,10 +17,10 @@ export default class MainNavBar extends React.Component {
   render() {
     let rightNavLinks = (
       <Nav className="top-menu-links">
+        <NavItem><Link className="navbar-app-link" to="/all-articles">All Articles</Link></NavItem>
         <NavItem><Link className="navbar-app-link" to="/about">About</Link></NavItem>
-        <NavItem><Link className="navbar-app-link" to="/dashboard">Dashboard</Link></NavItem>
-        <NavItem><Link className="navbar-app-link" to="/stats">Stats & News</Link></NavItem>
-        <NavItem><Link className="navbar-app-link" to="/register">Signup</Link></NavItem>
+        <NavItem><Link className="navbar-app-link" to="/contact">Contact</Link></NavItem>
+        <NavItem><Link className="navbar-app-link" to="/news">News</Link></NavItem>
       </Nav>
     );
     return (
@@ -29,7 +29,7 @@ export default class MainNavBar extends React.Component {
           <Navbar.Toggle />
           <Navbar.Brand>
             <Link className="top-logo" to="/"><img className="main-logo" src={mainLogo} alt="Site Logo" /></Link>
-            <Link className="app-name" to="/">The<br/>Hollywood Quantifier</Link>
+            <Link className="app-name" to="/"><span className="small-the-word">The<br/></span>Hollywood Quantifier</Link>
           </Navbar.Brand>
         </Navbar.Header>
         <Navbar.Collapse>

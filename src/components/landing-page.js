@@ -7,7 +7,7 @@ export function LandingPage(props) {
     return (
         <div className="landing-page">
             <div className="test-section">
-                <h1>Test Section of Landing Page</h1>
+                <h1><br/><br/><br/><br/><br/><br/><br/>Test Section of Landing Page</h1>
             </div>
         </div>
     );

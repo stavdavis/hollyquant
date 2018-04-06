@@ -64,7 +64,9 @@ a.navbar-app-link:hover,
 a.navbar-app-link:visited,
 a.navbar-app-link:active {
   display: block;
-  color: #AAA;
+  color: white;
+  font-size: 15px;
+  font-family: roboto;
   text-decoration: none;
 }
 
@@ -78,10 +80,6 @@ a.navbar-app-link:active {
   border: none;
 }
 
-.app-name {
-  cursor: pointer; 
-}
-
 .main-logo {
   position: absolute;
   top: 2.5px;
@@ -91,11 +89,32 @@ a.navbar-app-link:active {
 
 .app-name {
   position: absolute;
-  top: 18px; /*this aligns the bottom of the site-name with the bottom of the mobile menu button in mobile view */
+  top: 6px; /*this aligns the bottom of the site-name with the bottom of the mobile menu button in mobile view */
   left: 90px; /*the logo is 60px + 5px margins on each side*/
-  font-family: Righteous;
+  font-family: 'Abril Fatface', cursive; /*Righteous;*/
   color: white !important;
-  font-size: 20px !important;
+  font-size: 30px !important;
+  cursor: pointer; 
+}
+
+.app-name:hover {
+  text-decoration: none;
+}
+
+.small-the-word { /*this is the span element for the word "the" above "Hollywood Quantifier"*/
+  font-family: 'Abril Fatface', cursive;
+  font-size: 17px !important;
+}
+
+@media screen and (max-width: 767px) {
+  .app-name {
+    top: 10px; /*this aligns the bottom of the site-name with the bottom of the mobile menu button in mobile view */
+    font-size: 23px !important;
+  }
+
+  .small-the-word { /*this is the span element for the word "the" above "Hollywood Quantifier"*/
+    font-size: 14px !important;
+  }
 }
 
 /*.navbar-brand {
@@ -108,10 +127,11 @@ a.navbar-app-link:active {
 
 .navbar-toggle { /*this is the mobile menu button */
   background-color: midnightblue !important;
-  border-color: white !important;
-  height: 46px;
-  width: 46px;
-  margin-top: 12px; /*container (top bar) height is 70px*/
+  border-color: gray !important;
+  height: 36px;
+  width: 36px;
+  margin-top: 17px; /*container (top bar) height is 70px*/
+  margin-right: 5px;
   padding: 0; /*this is so that the three inner lines don't get off vertical alignment */ 
 }
 
@@ -120,7 +140,7 @@ a.navbar-app-link:active {
 }
 
 .icon-bar {  /* these are the three horizontal lines insinde the mobile menu button */
-  background-color: white !important;
+  background-color: gray !important;
   height: 3px !important;
   margin-top: 5px;
   margin-bottom: 5px;
